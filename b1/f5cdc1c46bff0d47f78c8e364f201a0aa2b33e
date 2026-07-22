@@ -1,0 +1,23 @@
+.npmrc
+  s_0ac33e64701c66::t_f7e247b0de86a6 1-2
+package.json
+  s_0ac33e64701c66::t_0dcf3adb7f6fea 34,49-50
+pnpm-workspace.yaml
+  s_0ac33e64701c66::t_3d741ce5c18b4d 11-20,22-25,28,32,35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "b1f5cdc1c46bff0d47f78c8e364f201a0aa2b33e",
+  "prompts": {},
+  "sessions": {
+    "s_0ac33e64701c66": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_075d29060ffezQSiOhstWcng5h",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "wan9chi <dk4rest@gmail.com>"
+    }
+  }
+}
