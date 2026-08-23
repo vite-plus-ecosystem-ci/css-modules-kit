@@ -6,7 +6,7 @@ import { readFile } from '../util.js';
 export const noUnusedClassNames: Rule.RuleModule = {
   meta: {
     type: 'problem',
-    language: 'css/css',
+    languages: ['css/css'],
     messages: {
       disallow: '"{{className}}" is defined but never used in "{{componentFileName}}"',
     },
