@@ -24,6 +24,7 @@ catalog:
   vitest: 4.1.11
   '@vitest/coverage-v8': 4.1.11
 overrides:
+  postcss: 8.5.16
   postcss-safe-parser: 7.0.1
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
