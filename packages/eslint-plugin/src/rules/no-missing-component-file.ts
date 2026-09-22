@@ -5,7 +5,7 @@ import { readFile } from '../util.js';
 export const noMissingComponentFile: Rule.RuleModule = {
   meta: {
     type: 'problem',
-    language: 'css/css',
+    languages: ['css/css'],
     messages: {
       disallow: 'The corresponding component file is not found.',
     },
