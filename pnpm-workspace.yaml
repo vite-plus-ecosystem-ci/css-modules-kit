@@ -8,13 +8,28 @@ allowBuilds:
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
   - '@mizdra/*'
+  - vite-plus
+  - '@voidzero-dev/*'
+  - oxlint
+  - '@oxlint/*'
+  - oxlint-tsgolint
+  - '@oxlint-tsgolint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - vitest
+  - '@vitest/*'
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@0.2.1
-  vite-plus: 0.2.1
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.73ce44ef507f7c2aed23bc5addd747d0e3d0b33a
+  vite-plus: 0.0.0-commit.73ce44ef507f7c2aed23bc5addd747d0e3d0b33a
+  vitest: 5.0.1
+  '@vitest/coverage-v8': 5.0.1
 overrides:
-  vite: 'catalog:'
+  vite@*: 'catalog:'
+  vitest@*: 'catalog:'
 peerDependencyRules:
   allowAny:
     - vite
+    - vitest
   allowedVersions:
     vite: '*'
+    vitest: '*'
