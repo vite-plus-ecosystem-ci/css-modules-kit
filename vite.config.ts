@@ -52,6 +52,14 @@ export default defineConfig({
           'no-await-in-loop': 'off',
         },
       },
+      {
+        // `meta.language` is deprecated in favour of `meta.languages`, but switching would
+        // make ESLint 10 reject these rules for non-CSS configs (a runtime behaviour change).
+        files: ['packages/eslint-plugin/src/rules/**'],
+        rules: {
+          'typescript/no-deprecated': 'off',
+        },
+      },
     ],
     options: { typeAware: true, typeCheck: true },
   },
