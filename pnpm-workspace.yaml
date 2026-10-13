@@ -7,6 +7,14 @@ allowBuilds:
   keytar: false
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
   - '@mizdra/*'
   # Ecosystem-ci smoke test: Vite+ core pins freshly published oxc packages.
   - '@oxc-project/*'
