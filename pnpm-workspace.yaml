@@ -9,6 +9,22 @@ allowBuilds:
   keytar: false
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
+  - oxlint
+  - '@oxlint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - oxlint-tsgolint
+  - '@oxlint-tsgolint/*'
+  - vitest
+  - '@vitest/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
   - '@mizdra/*'
   # The typescript nightly (and its native binary packages) pinned for the content-mapper e2e tests.
   # Unlike the other devDependencies, it is installed in packages/content-mapper instead of the root:
