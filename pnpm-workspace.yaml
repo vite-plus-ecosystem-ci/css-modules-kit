@@ -7,14 +7,37 @@ allowBuilds:
   keytar: false
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
+  - oxlint
+  - '@oxlint/*'
+  - oxfmt
+  - '@oxfmt/*'
+  - oxlint-tsgolint
+  - '@oxlint-tsgolint/*'
+  - vitest
+  - '@vitest/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
   - '@mizdra/*'
+  # Ecosystem-ci smoke test: Vite+ core pins freshly published oxc packages.
+  - '@oxc-project/*'
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@0.2.1
-  vite-plus: 0.2.1
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.6bc2d240a024170c08fbc831f0c201c162afd22e
+  vite-plus: 0.0.0-commit.6bc2d240a024170c08fbc831f0c201c162afd22e
+  vitest: 5.0.5
+  '@vitest/coverage-v8': 5.0.5
 overrides:
-  vite: 'catalog:'
+  vite@*: 'catalog:'
+  vitest@*: 'catalog:'
 peerDependencyRules:
   allowAny:
     - vite
+    - vitest
   allowedVersions:
     vite: '*'
+    vitest: '*'
