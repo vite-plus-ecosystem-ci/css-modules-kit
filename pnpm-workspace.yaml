@@ -26,6 +26,8 @@ minimumReleaseAgeExclude:
   - '@yuku-core/*'
   - '@yuku-toolchain/*'
   - '@mizdra/*'
+  # Ecosystem-ci smoke test: Vite+ core pins freshly published oxc packages.
+  - '@oxc-project/*'
   # The typescript nightly (and its native binary packages) pinned for the content-mapper e2e tests.
   # Unlike the other devDependencies, it is installed in packages/content-mapper instead of the root:
   # in the root, pnpm would link its `tsc` (the higher version) in place of the `tsc` of typescript 6.
