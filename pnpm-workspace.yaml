@@ -40,11 +40,13 @@ minimumReleaseAgeExclude:
   - '@typescript/typescript-linux-x64@7.1.0-dev.20261030.1'
   - '@typescript/typescript-win32-arm64@7.1.0-dev.20261030.1'
   - '@typescript/typescript-win32-x64@7.1.0-dev.20261030.1'
+  - tsrs
+  - '@tsrs/*'
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@1.3.0
-  vite-plus: 1.3.0
-  vitest: 5.0.5
-  '@vitest/coverage-v8': 5.0.5
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vite-plus: 0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vitest: 5.1.1
+  '@vitest/coverage-v8': 5.1.1
 overrides:
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
